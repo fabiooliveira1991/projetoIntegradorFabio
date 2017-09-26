@@ -1,0 +1,103 @@
+@charset "utf-8";
+/* CSS Document */
+
+.titulos_lista_pesquisa
+{
+	/* color:#360; */
+	color:#060;
+	background-color:#CCF;
+	font-weight:bold;	
+}
+
+.itens_tabela_banco
+{
+	color:#C30;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background-color:#9F9;
+}
+
+.ordenacao_novo_registro
+{
+	color:#00F;
+	background-color:#6FC;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+}
+
+.alterar_excluir
+{
+	color:#906;
+	/*background-color:#CCC;*/
+	background-color:#9C3;
+	/*font-weight:bold;*/
+	/*font-family:Arial, Helvetica, sans-serif;*/
+	/*font-size:14px;*/
+	text-align:center;
+}
+
+.alterar_excluir_over
+{
+	background-color:#CCC;
+	text-align:center;
+}
+
+.borda_tabela 
+{
+	border-collapse:collapse;
+	background-color:#999;
+}
+
+ul 
+{
+	list-style: none;
+}
+
+a
+{
+	text-decoration: none;
+}
+
+a:visited
+{
+	text-decoration: none;
+	color: #039;
+}
+
+a:link
+{
+	text-decoration: none;
+	color: #039;
+}
+
+.titulo_sistema
+{
+	font-size:24px;
+	text-align:center;
+	font-weight:bold;
+	color:#000066;
+}
+
+.menu
+{
+	color:#009;
+	text-align:left;
+	font-size:20px;	
+}
+
+.menu a:hover
+{
+	text-decoration: underline;
+}
+
+.menu_over 
+{
+	/*background-color:#009;*/
+	text-align:left;
+	font-size:20px;
+	/*background-color:#F00;*/
+}
+
+

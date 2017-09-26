@@ -1,0 +1,403 @@
+/* RESET
+Iniciar o CSS com todas as tags HTML sem qualquer estilo padrão definido pelo browser
+*/
+@charset "UTF-8";
+
+.cf:before, .cf:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+	
+img, a {
+	border: none;
+	outline: none;
+}
+
+p {
+	padding: 5px;
+}
+
+h1 {
+	padding: 5px;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	border: 0px;
+	padding: 5px;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+/*Aqui faço as divs do row-topo ********************************************************************* */  
+.row-topo {
+	width: 100%;
+	border-top: 3px solid red;
+	border-bottom: 2px solid red;
+
+}
+
+/*LOGOTIPO-IMAGEM*/
+.row-topo .generalize {
+	max-width: 1280px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+/*LOGO*/
+.row-topo .logo {
+	width: 150px;
+	height: 150px;
+	float: left;
+	margin: 0 0 0 20px;
+}
+
+/*MENU*/
+.row-topo .generalize .menu {
+	display: block;
+	float: right;
+	margin-top: 40px;
+	margin-right: 10px;
+}
+
+.row-topo .generalize .menu ul {
+	margin-top: 60px;
+	margin-left: 40px;
+	float: right;
+	font-weight: bold;
+}
+
+.row-topo .generalize .menu li {
+	display: inline;
+}
+
+.row-topo .generalize .menu a {
+	margin-left: 50px;
+	text-decoration: none;
+	color: green;
+	font-size: 14px;
+}
+
+.row-topo .generalize .menu a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+/* Aqui estou fazendo a div do Row-slider ******************************************************/
+
+.row-slider {
+	width: 100%;
+	background-color: black;
+}
+
+.row-slider .generalize {
+	max-width: 1280px;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.row-slider .slide {
+	min-height: 410px;
+	/*min-height: 350px;*/
+	border: 1px solid #fff;
+	position: relative;
+	text-align: left;
+}
+
+.row-slider .slideImagem {
+	position: absolute;
+	opacity: 0;
+	animation: animaSlide 10s infinite;
+	-webkit-animation: animaSlide 10s infinite;
+}
+
+@keyframes animaSlide {
+	25% {
+		opacity: 1
+	}
+	75% {
+		opacity: 0
+	}
+}
+
+@-webkit-keyframes animaSlide {
+	25% {
+		opacity: 1
+	}
+	75% {
+		opacity: 0
+	}
+}
+
+.row-slider .slideImagem:nth-child(0) {
+	animation-delay: 0s
+}
+
+.row-slider .slideImagem:nth-child(1) {
+	animation-delay: 5s
+}
+
+.row-slider .slideImagem:nth-child(2) {
+	animation-delay: 10s
+}
+
+/* Aqui estou fazendo a div do Row-cardapio ******************************************************/
+
+.row-cardapio {
+	width: 100%;
+	border-bottom: 1px solid black;
+
+}
+
+.row-cardapio .generalize {
+	max-width: 1280px;
+	width: 80%;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+.row-cardapio .generalize .column {
+	color: green;
+	font-size: 10px;
+}
+
+.row-cardapio .generalize .column01 {
+	width: 512px;
+	float: left;
+	margin-right: 10px;
+	/*background-color: gray;*/
+}
+
+.row-cardapio .generalize .promocao img {
+	height: 120px;
+	width: 130px;
+	float: left;
+	margin-right: 30px;
+}
+
+.row-cardapio .generalize .promocao h2 {
+	margin-top: 20px;
+	color: red;
+}
+
+.row-cardapio .generalize .promocao p {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.row-cardapio .generalize .column {
+
+}
+
+.row-cardapio .generalize .column02 {
+	
+}
+
+.row-cardapio .generalize .column02 .noticias {
+	float: left;
+	width: 400px;
+}
+
+
+.row-cardapio .generalize .column02 .noticias img {
+	height: 100px;
+	width: 70px;
+	float: left;
+	margin-right: 30px;
+	margin-left: 20px;
+}
+
+.row-cardapio .generalize .column02 .noticias h2 {
+	padding-top: 10px;
+	color: red;
+}
+
+.row-cardapio .generalize .column02 .noticias p {
+	font-size: 14px;
+}
+
+.row-cardapio .generalize .column02 .noticias-brahma {
+	float: left;
+	width: 500px;
+}
+
+.row-cardapio .generalize .column02 .noticias-brahma img {
+	height: 100px;
+	width: 120px;
+	float: left;
+}
+
+.row-cardapio .generalize .column02 .noticias-brahma h2 {
+	color: red;
+	font-size: 14px;
+	margin-right: 70px;
+}
+
+.row-cardapio .generalize .column02 .noticias-brahma p {
+	font-size: 14px;
+}
+
+/* ENDERECO*/
+.row-contato {
+	width: 100%;
+	border-bottom: 1px solid black;
+}
+
+.row-contato .generalize {
+	max-width: 1280px;
+	width: 80%;
+	margin: 0 auto;
+	/*background-color: green;*/
+}
+
+.row-contato .generalize .caixa1 {
+	width: 50%;
+	float: left;
+}
+
+.row-contato .caixa1 .tituloDestaque {
+	text-transform: uppercase;
+	text-decoration: underline;
+	color: red;
+	margin-bottom: 20px;
+}
+.endereco li, address {
+	line-height: 50px;
+	font-style: italic;
+	border-bottom: 1px #eee solid;
+	list-style: none;
+	text-align: left;
+}
+
+.endereco img {
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 5px;
+}
+
+.endereco a{
+	color: #444;
+}
+
+.endereco a:hover {
+	color: red;
+}
+
+
+
+.row-contato .caixa2 {
+	float: left;
+	width: 50%;
+}
+
+.row-contato .caixa2 .tituloDestaque {
+	text-transform: uppercase;
+	text-decoration: underline;
+	color: red;
+	margin-bottom: 20px;
+}
+
+.row-contato .caixa2 .botao {
+	margin: 10px;
+	display: inline-block;
+	border: 2px solid;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 10px;
+}
+
+.row-contato .caixa2 .botaoMedio {
+	padding: 10px 30px;
+}
+
+.row-contato .caixa2 .botaoGrande {
+	padding: 15px 50px;
+}
+
+.row-contato .caixa2 .botaoAmarelo {
+	background-color: #ffa900;
+	border-color: #ec9f00;
+	margin-left: 200px;
+}
+
+.row-contato .caixa2 .botaoAmarelo:hover {
+	background-color: #ffbe37;
+}
+
+/* FORMULARIO*/
+
+
+input[type="text"],input[type="email"],textarea {
+	width: 100%;
+	padding: 15px;
+	background: #e9e9e9;
+	border: 1px solid #ddd;
+	margin: 1%;
+	text-align: left;
+}
+
+/* AQUI COMEÇO FAZER AS ESTILIZAÇÃO DO RODAPÉ ********************************/
+.rodape {
+	max-width: 1280px;
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+
+
+}
+
+footer {
+	background-color: green;
+	color: white;
+}
+
+footer p {
+	font-size: 0.9em
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10px;
+}
+
+footer span {
+	font-size: 0.8em;
+	margin-left: 70px;
+}
+
+footer img {
+	width: 46px;
+	height: 46px;
+}
+
+footer ul {
+	display: block;
+	margin: 0 auto;
+	width: 80%;
+}
+
+/*SOCIAL ************************************/
+
+.social li{
+	display: inline-block;
+	margin: 1%;
+	position: relative;
+}
+
+.social a {
+	position: relative;
+	padding: 10px;
+	left: 300px;
+	top: 10px;
+}
